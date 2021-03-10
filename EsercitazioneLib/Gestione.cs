@@ -16,7 +16,28 @@ namespace EsercitazioneLib
                 return 0;
             }
         }
-        
-
+        public static double Incremento(double a)
+        {
+            double num = a / 2;
+            double incremento = a + num;
+            return incremento;
+        }
+        public static double LatoQuadrato(double a)
+        {
+            if (a > 0)
+            {
+                double lato = Math.Sqrt(a);
+                return lato;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        public static string Binario(int a, int b)
+        {
+            string s = Convert.ToString(a, b);
+            return s;
+        }
     }
 }
