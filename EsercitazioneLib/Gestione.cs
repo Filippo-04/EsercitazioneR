@@ -6,9 +6,9 @@ namespace EsercitazioneLib
     {
         public static double Sconto(double a)
         {
-            if (a > 0 && a < 100)
+            if (a > 0 && a <= 100)
             {
-                double sconto = (a / 100) * 10;
+                double sconto= a/100 * 10;
                 return sconto;
             }
             else
