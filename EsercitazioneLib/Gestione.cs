@@ -6,9 +6,17 @@ namespace EsercitazioneLib
     {
         public static double Sconto(double a)
         {
-            double sconto = (a / 100) * 10;
-            return sconto;
+            if (a > 0 && a < 100)
+            {
+                double sconto = (a / 100) * 10;
+                return sconto;
+            }
+            else
+            {
+                return 0;
+            }
         }
+        
 
     }
 }
